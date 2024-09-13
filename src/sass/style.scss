@@ -11,36 +11,39 @@ body {
     margin: 0 auto;
 }
 
+
 .container {
     margin: 0 auto;
     max-width: 200px;
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
 }
 
 .avatar {
     width: 100%;
     padding-bottom: 100%;
-    position: relative;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.avatar__square {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.avatar__image {
+.avatar--circle {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 5px 4px 20px black;
 }
 
-.avatar__component-preview {
-    width: 200px;
+.avatar--square {
+    box-shadow: 5px 4px 20px black;
+}
+
+.avatar--rounded {
+    border-radius: 20px;
+    box-shadow: 5px 4px 20px black;
+}
+
+.avatar--transparent{
+    filter: opacity(0.5);
+    box-shadow: 5px 4px 20px black;
 }

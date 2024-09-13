@@ -15,35 +15,43 @@ body {
 .container {
   margin: 0 auto;
   max-width: 200px;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  margin-top: 50px; }
 
 .avatar {
   width: 100%;
   padding-bottom: 100%;
-  position: relative; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
-.avatar__square {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.avatar__image {
+.avatar--circle {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  border-radius: 100%;
+  -webkit-box-shadow: 5px 4px 20px black;
+          box-shadow: 5px 4px 20px black; }
 
-.avatar__component-preview {
-  width: 200px; }
+.avatar--square {
+  -webkit-box-shadow: 5px 4px 20px black;
+          box-shadow: 5px 4px 20px black; }
+
+.avatar--rounded {
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 4px 20px black;
+          box-shadow: 5px 4px 20px black; }
+
+.avatar--transparent {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  -webkit-box-shadow: 5px 4px 20px black;
+          box-shadow: 5px 4px 20px black; }
 
 /*# sourceMappingURL=style.css.map */
